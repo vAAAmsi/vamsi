@@ -1,0 +1,107 @@
+#main-container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    /* background-color: red; */
+}
+#left-container{
+   height: 78%;
+   width: 30%;
+   border: 2px solid black;
+   border-radius: 10px;
+   padding: 10px;
+   float: left;
+   margin-right: 20px;
+
+   
+}
+
+#right-container{
+   height: 78%;
+   width: 30%;
+   border: 2px solid black;
+   border-radius: 10px;
+   padding: 10px;
+   float: left;
+   margin-right: 20px;
+}
+#items{
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+    /* color: red; */
+    /* font-size: 20px; */
+}
+#button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid black;
+
+}
+
+#btn-container{
+    display: flex;
+    justify-content: center;
+}
+#hiddenbtn {
+    display: none;
+}
+
+@media screen and (max-width:391px) {
+    #left-container{
+        width: 40%;
+        /* height: 40%; */
+    }
+    #right-container{
+        width: 40%;
+    }
+   #button{
+    display: none;
+   }
+}
+@media screen and (max-width:480px) {
+    #left-container{
+        width: 40%;
+        /* height: 40%; */
+    }
+    #right-container{
+        width: 40%;
+    }
+   
+}
+@media screen and (max-width:500px) {
+    #button{
+        display: none;
+    }
+    #hiddenbtn{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+   
+}
+
