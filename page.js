@@ -32,7 +32,26 @@ function drop() {
     
     
 }
-btn,hiddenbtn.addEventListener('click', () => {
+btn.addEventListener('click', () => {
+    
+    right.innerHTML = " "
+    left.innerHTML=""
+    
+    left.innerHTML = `
+                <div id="items"  class="items" ondragstart="dragstart(event)"  draggable="true">Item 1</div>
+                <div id="items" class="items" ondragstart="dragstart(event)" draggable="true">Item 2</div>
+                <div id="items" class="items" ondragstart="dragstart(event)" draggable="true">Item 3</div>
+                <div id="items" class="items" ondragstart="dragstart(event)" draggable="true">Item 4</div>
+                <div id="items" class="items" ondragstart="dragstart(event)" draggable="true">Item 5</div>
+                <div id="items" class="items" ondragstart="dragstart(event)" draggable="true">Item 6</div>
+                <div id="items" class="items"ondragstart="dragstart(event)" draggable="true">Item 7</div>
+                <div id="items" class="items" ondragstart="dragstart(event)" draggable="true">Item 8</div>
+                <div id="items" class="items" ondragstart="dragstart(event)" draggable="true">Item 9</div>
+  `;
+  
+    
+})
+hiddenbtn.addEventListener('click', () => {
     
     right.innerHTML = " "
     left.innerHTML=""
